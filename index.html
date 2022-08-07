@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linked to the style sheet css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Imported bootstrap cdn links for using bootestrap classes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <!-- Google fonts cdn links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <title>Daily News Tracker App</title>
+</head>
+<body class="m-0 p-0">
+    <a id="up"></a>
+    <div class="container-fluid m-0 p-0">
+      
+        <!-- NavBar -->
+        <div class="main">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark extra">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#headlines" id="Headlines">DailyNewsTracker<span class="text-warning">&#174;</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#general" id="General">General <i class="fa-brands fa-searchengin"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#health" id="Health">Health <i class="fa-solid fa-user-doctor"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#business" id="Business">Business <i class="fa-solid fa-user-tie"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sports" id="Sports">Sports <i class="fa-solid fa-baseball-bat-ball"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#science" id="Science">Science <i class="fa-solid fa-microscope"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#technology" id="Technology">Technology <i class="fa-solid fa-microchip"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#entertainment" id="Entertainment">Entertainment <i class="fa-solid fa-tv"></i></a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="text" placeholder="Search News" aria-label="Search" id="NewsQuery">
+                      <button class="btn btn-outline-warning" type="submit" id="Search">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        </div>
+        <div class="header">
+          <h2 class="text-center bg-black text-light m-2">DailyNewsTracker<span class="text-warning">&#174;</span></h2>
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        <div class="content m-3">
+          <!-- News -->
+          <div>
+              <div class="row" id="newsType">
+
+              </div>
+              <div class="row content" id="newsDetails">
+
+              </div>
+          </div>
+
+          <form name="form1">
+            <div class="text-center m-3" id="dialogBox">  
+              <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
+                <h6>You Will Be Now Notified With Latest News and We Assure to Keep You Updated.</h6>  
+                <button id="hide">Great</button>  
+              </dialog>
+              <input id="em" type="email" name="e-mail" placeholder="   Enter Your Email Here" style="border-radius: 5px;">
+              <button id="show" type="button" class="bg-warning checkout-button" style="border-radius: 5px;">Subscribe</button>   
+            </div> 
+          </form>
+          <h6 class="text-center"><span style="color: crimson;">*</span> Subscribe to get Latest News ongo.</h6>
+        </div>
+        <!-- Footer -->
+        <div class="mt-5">
+          <div>
+            <a href="#up" class="goback">
+              <i class="fa-solid fa-circle-chevron-up"></i>
+            </a>
+          </div>
+            <nav class="navbar sticky-bottom navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <h5 class="text-light me-auto ms-auto">DailyNewsTracker<span class="text-warning">&#174;</span></h5>
+                </div>
+              </nav>
+          </div>
+        </div>
+
+
+    <!-- Linked to external javascript file -->
+    <script src="code.js"></script>
+    <!-- Imported bootstrap cdn links for using bootstrap actions -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
